@@ -1,0 +1,147 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /* Ganti dengan font yang lebih 'gaming' jika ada */
+}
+
+:root {
+    /* Variabel Warna */
+    --color-primary: #3498db; /* Biru terang untuk aksen */
+    --color-secondary: #2ecc71; /* Hijau untuk tombol CTA */
+    --color-bg-dark: #2c3e50; /* Biru tua/hampir hitam */
+    --color-text-light: #ecf0f1; /* Teks putih keabu-abuan */
+    --color-card-bg: #34495e; /* Latar belakang kartu */
+}
+
+body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+/* --- HEADER --- */
+.main-header {
+    background-color: #233140; /* Sedikit lebih gelap dari BG */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.main-nav a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: var(--color-primary);
+}
+
+.btn-login {
+    background-color: var(--color-primary);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    padding: 100px 5%;
+    text-align: center;
+    background: url('path/to/growtopia-bg.jpg') no-repeat center center/cover; /* Ganti dengan gambar BG Anda */
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.btn-cta {
+    background-color: var(--color-secondary);
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #27ae60;
+}
+
+/* --- MAIN CONTENT / GRID --- */
+.main-content {
+    padding: 50px 5%;
+}
+
+.content-grid {
+    display: grid;
+    /* Membuat layout 3 kolom (atau lebih) di layar lebar */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--color-card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* --- FOOTER --- */
+.main-footer {
+    background-color: #233140;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: #95a5a6;
+}
